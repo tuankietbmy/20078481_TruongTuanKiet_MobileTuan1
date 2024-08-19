@@ -118,7 +118,7 @@ function printBillSummary(bill) {
 }
 
 // Kiểm tra với các dữ liệu thử nghiệm
-printBillSummary(bill1); 
+printBillSummary(bill1); //
 printBillSummary(bill2); 
 printBillSummary(bill3); 
 
