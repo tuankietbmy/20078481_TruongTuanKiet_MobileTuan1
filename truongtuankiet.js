@@ -98,6 +98,7 @@ const koalasAverage3 = koalasScores3.reduce((a, b) => a + b) / koalasScores3.len
 determineWinner(dolphinsAverage3, koalasAverage3);
 
 //----------------------------------------
+console.log('#4')
 // Dữ liệu thử nghiệm
 const bill1 = 275;
 const bill2 = 40;
