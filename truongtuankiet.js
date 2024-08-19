@@ -97,4 +97,28 @@ const koalasAverage3 = koalasScores3.reduce((a, b) => a + b) / koalasScores3.len
 // Xác định kết quả cho dữ liệu thử nghiệm 3
 determineWinner(dolphinsAverage3, koalasAverage3);
 
+//----------------------------------------
+// Dữ liệu thử nghiệm
+const bill1 = 275;
+const bill2 = 40;
+const bill3 = 430;
+
+// Hàm tính tiền boa
+function calculateTip(bill) {
+    // Sử dụng toán tử điều kiện ba ngôi để tính tiền boa
+    const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+    return tip;
+}
+
+// Hàm in kết quả ra bảng điều khiển
+function printBillSummary(bill) {
+    const tip = calculateTip(bill);
+    const total = bill + tip;
+    console.log(`Hóa đơn là ${bill}, tiền tip là ${tip.toFixed(2)} và tổng giá trị ${total.toFixed(2)}`);
+}
+
+// Kiểm tra với các dữ liệu thử nghiệm
+printBillSummary(bill1); // 275
+printBillSummary(bill2); // 40
+printBillSummary(bill3); // 430
 
